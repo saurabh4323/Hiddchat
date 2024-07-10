@@ -15,14 +15,6 @@ const PORT = process.env.PORT || 5000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
-<<<<<<< HEAD
-=======
-const corsOption = {
-  origin: "https://hiddchatfrontend.vercel.app",
-  credentials: true,
-};
-app.use(cors(corsOption));
->>>>>>> fda68328e0c2ea18c3e7b61b22c641b06a281d2f
 
 const corsOptions = {
   origin: ["https://hiddchatfrontend.vercel.app", "http://localhost:3000"],
